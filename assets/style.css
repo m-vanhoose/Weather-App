@@ -1,0 +1,23 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.head {
+    background-color: #3a51e8;
+    color:white;
+    font-size: 30px;
+    margin-top: 10px;
+    border-width: 3px;
+    border-bottom:#e61c26;
+    
+}
+
+.searchbar {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input {
+    
+}
