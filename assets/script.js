@@ -14,16 +14,32 @@ let citySearch = function(city) {
         .then(function (data){
             console.log(data)
     
+    // let cards = document.getElementById('hide')
+    // cards.className = ''
     let weatherData = document.getElementById('weatherdata');
     weatherData.innerHTML = ''
     let nameEl = document.createElement('p');
     nameEl.innerText = data.name;
     weatherData.appendChild(nameEl);
+    nameEl.className = 'cityname';
     let dateEl = document.createElement('span');
     dateEl.innerText = dayjs.unix(data.dt).format('MMMM D YYYY')
     weatherData.appendChild(dateEl);
+    dateEl.className = 'date';
     let imgEl = document.createElement('img')
     imgEl.src = 'http://openweathermap.org/img/wn/'+data.weather[0].icon+'@2x.png';
     weatherData.appendChild(imgEl);
+    imgEl.className = 'img';
+
+    });
+
+    let requestUrl2 = 'api.openweathermap.org/data/2.5/forecast?q='+ city +'&appid=3ef2a12f03e1ed36d30c2f2797577759';
+    fetch(requestUrl)
+        .then(function (response) {
+        return response.json();
     })
+        .then(function (data){
+            console.log(data)
+        
+        })
 }
