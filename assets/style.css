@@ -18,9 +18,9 @@
     margin-bottom: 10px;
 }
 
-/* .hide {
+.hide {
     visibility: hidden;
-} */
+}
 
 .cityname {
     font-size: 30px;
@@ -32,4 +32,12 @@
 
 .img {
     max-width: 20%;
+}
+
+.future {
+    font-size: 30px;
+}
+
+.card {
+    margin: 5px;
 }
