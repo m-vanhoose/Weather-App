@@ -20,13 +20,13 @@
                 <button id="search" class="btn btn-outline-primary input" type="submit">Search</button>
               </form>
           </div>
-          <div class="col-6">
-            <div class="col-3" id="weatherdata"></div>
-            <div class="card col-3"  style="width: 10rem;">
+          <div class="col-6 hide" id="ul">
+            <div class="col" id="weatherdata"></div>
+            <div class="card col"  style="width: 28rem;">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
+                <li class="list-group-item" id="temp0"></li>
+                <li class="list-group-item" id="wind0"></li>
+                <li class="list-group-item" id="hum0"></li>
               </ul>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <div class="card" style="width: 11rem;">
                 <div class="card-header" id="day3"></div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" ide="temp3"></li>
+                  <li class="list-group-item" id="temp3"></li>
                   <li class="list-group-item" id="wind3"></li>
                   <li class="list-group-item" id="hum3"></li>
                 </ul>
